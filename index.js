@@ -16,6 +16,7 @@ function telnet(log, config) {
     this.shellPrompt = config["shellPrompt"];
     this.timeout = config["timeout"];
     this.name = config["name"];
+    this.cmd = config["cmd"];
 }
 
 telnet.prototype = {
@@ -27,7 +28,7 @@ telnet.prototype = {
     setPowerState: function(powerOn, callback) {
         var connection = new telnetClient();
         connection.on('ready', function(prompt){
-            connection.exec(cmd, function(){
+            connection.exec(this.cmd, function(){
                 connection.end().then(function(){
                     callback();
                 });
