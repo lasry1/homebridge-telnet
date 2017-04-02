@@ -1,0 +1,25 @@
+{
+  "name": "homebridge-telnet",
+  "version": "1.0.0",
+  "description": "I don't even know anymore.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moriczgergo/homebridge-telnet.git"
+  },
+  "keywords": [
+    "homebridge-plugin"
+  ],
+  "author": "skiilaa",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/moriczgergo/homebridge-telnet/issues"
+  },
+  "homepage": "https://github.com/moriczgergo/homebridge-telnet#readme",
+  "dependencies": {
+    "telnet-client": "^0.13.1"
+  }
+}
