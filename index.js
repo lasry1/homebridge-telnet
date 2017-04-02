@@ -13,7 +13,7 @@ function telnet(log, config) {
 
     this.host = config["host"];
     this.port = config["port"];
-    this.shellPrompt = config["/ # "];
+    this.shellPrompt = config["shellPrompt"];
     this.timeout = config["timeout"];
     this.name = config["name"];
 }
@@ -36,7 +36,7 @@ telnet.prototype = {
         connection.on('timeout', function(){
             callback(error);
         });
-        
+
         connection.connect({ host: this.host, port: this.port, shellPrompt: this.shellPrompt, timeout: this.timeout});
     },
 
