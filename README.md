@@ -27,8 +27,9 @@ An example:
             "name": "Coffee Maker",
             "port": 23,
             "shellPrompt": "/ # ",
-            "timeout": 1500
-        }
+            "timeout": 1500,
+            "cmd": "help"
+        }
     ]
 }
 ```
