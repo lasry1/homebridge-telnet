@@ -1,6 +1,6 @@
 {
   "name": "homebridge-telnet",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "I don't even know anymore.",
   "main": "index.js",
   "scripts": {
